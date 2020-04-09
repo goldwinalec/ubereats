@@ -89,3 +89,22 @@ footer {
   background-color: #262626;
   margin-top: 100px;
 }
+
+.info-footer {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  border-top: 1px solid rgba(256, 256, 256, 0.4);
+  border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+  margin-top: 60px;
+}
+
+.btn,
+.dropdown-menu {
+  font-size: 13px;
+  line-height: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropdown img {
+  margin-right: 17px;
+}
