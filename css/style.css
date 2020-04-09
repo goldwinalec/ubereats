@@ -4,5 +4,38 @@ body {
 
 header {
   padding: 30px 0;
-  background-color: #ddd;
+  background-color: #fff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.header-logo {
+  display: flex;
+  align-self: center;
+}
+
+.login_button {
+  margin: 0 27px 0 0;
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #1D1D1D;
+  background-color: transparent;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+.header-right {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.search-menu  {
+  width: 100%;
+  margin-top: 56px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: #626262;
+  font-size: 16px;
+  line-height: 24px;
 }
