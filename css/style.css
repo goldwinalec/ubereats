@@ -47,14 +47,21 @@ header {
 }
 
 .menu-card {
-  margin-top: 20px;
   background-color: #fff;
+  padding: 0;
+  margin: 20px 5px 0 5px;
+  max-width: 308px;
+
 }
 
 .rest-name {
   font-size: 16px;
   line-height: 24px;
   margin: 16px 0 0 0;
+}
+
+.rest-image {
+  width: 100%;
 }
 
 .category {
@@ -68,9 +75,17 @@ header {
   font-size: 13px;
   line-height: 21px;
   margin: 4px 0 0 0;
+  padding-bottom: 20px;
 }
 
 .menu-card:hover {
   cursor: pointer;
   background-color: rgba(117, 117, 117, 0.04);
+}
+
+footer {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  background-color: #262626;
+  margin-top: 100px;
 }
