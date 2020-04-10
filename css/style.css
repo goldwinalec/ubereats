@@ -31,7 +31,7 @@ header {
     justify-content: center;
 }
 
-.search-menu  {
+.search-menu {
   width: 100%;
   margin: 56px 0;
   border: none;
@@ -41,6 +41,9 @@ header {
   line-height: 24px;
 }
 
+.search-menu:focus{
+  border: none;
+}
 .restraunts-header {
   font-size: 22px;
   line-height: 34px;
@@ -136,6 +139,7 @@ footer {
 
 .footer-list {
   list-style: none;
+  margin-bottom: 0;
 }
 
 .footer-list a {
@@ -146,4 +150,32 @@ footer {
 
 .footer-list li {
     margin-bottom: 23px;
+}
+
+.footer-list .last-li {
+  margin-bottom: 0;
+}
+
+.apps {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+}
+
+.apps a {
+  margin: 0 10px;
+}
+
+.footer_footer {
+  padding-top: 40px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  text-align: left;
+}
+
+.footer_footer a {
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  text-align: left;
 }
