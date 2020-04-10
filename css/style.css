@@ -140,6 +140,7 @@ footer {
 .footer-list {
   list-style: none;
   margin-bottom: 0;
+  padding-inline-start: 0;
 }
 
 .footer-list a {
@@ -149,7 +150,7 @@ footer {
 }
 
 .footer-list li {
-    margin-bottom: 23px;
+  margin-bottom: 23px;
 }
 
 .footer-list .last-li {
@@ -178,4 +179,27 @@ footer {
   line-height: 13px;
   color: #fff;
   text-align: left;
+}
+
+#myBtn {
+/*  display: none;*/
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: #59BD5A;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  transition: .1s;
+
+}
+
+#myBtn:hover {
+  opacity: 0.2; /* Add a dark-grey background on hover */
 }
