@@ -136,5 +136,15 @@ footer {
 
 .footer-list {
   list-style: none;
-  displa
+  float: right;
+}
+
+.footer-list a {
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.footer-list li {
+    margin-bottom: 23px;
 }
