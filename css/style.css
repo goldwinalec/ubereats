@@ -114,6 +114,20 @@ footer {
   margin-bottom: 33px;
 }
 
+.dropdown,
+.dropdown:focus {
+  background: #3B3B3B;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+  width: 227px;
+  height: 40px;
+  margin-bottom: 33px;
+  padding: 12px;
+}
+
 .form-control:hover {
   cursor: pointer;
 }
