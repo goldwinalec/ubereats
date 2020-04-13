@@ -182,7 +182,6 @@ footer {
 }
 
 #myBtn {
-/*  display: none;*/
   position: fixed;
   bottom: 24px;
   right: 16px;
@@ -201,5 +200,5 @@ footer {
 }
 
 #myBtn:hover {
-  opacity: 0.2; /* Add a dark-grey background on hover */
+  opacity: 0.2;
 }
