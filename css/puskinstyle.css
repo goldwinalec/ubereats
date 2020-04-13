@@ -1,18 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .main-restraunt {
-  background-image: url('../img/pushkin/back2.png');
+  background-image: url('../img/pushkin/back3.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 182px 0;
-  position: relative;
+  background-position: center center;
+  padding: 80px 0;
 }
 
 .card-restraunt {
   background-color: #fff;
-  position: absolute;
-  top: 5rem;
-  left: 3rem;
   box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
   border-radius: 2px;
+  padding: 35px;
 }
 
 
@@ -20,22 +23,19 @@
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  color: #1D1D1D;
-  margin: 38px 38px 0;
+  margin: 0;
 }
 
 .card-restraunt p {
-  margin-left: 38px;
   margin-top: 60px;
 }
 
 .card-restraunt p:last-child {
-  margin-right: 30px;
   background: #262626;
   border-radius: 16px;
   color: #fff;
   padding: 4px 16px;
-  margin-bottom: 38px;
+  margin-left: 50px;
 }
 
 .menu-nav {
@@ -61,4 +61,63 @@ ul a {
 
 li .active {
   color: #327430;
+  text-decoration: none;
+  cursor: default;
+}
+
+.snacks-menu {
+  background-color: #eee;
+}
+
+.snack-header {
+  padding-top: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.menu_card {
+  background-color: #fff;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 160px;
+  margin-bottom: 49px;
+  position: relative;
+}
+
+.menu_card:hover {
+  cursor: pointer;
+  background-color: rgba(117, 117, 117, 0.04);
+}
+
+.card-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.card-desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #626262;
+  padding-left: 15px;
+}
+
+.price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  position: absolute;
+  left: .9rem;
+  top: 7.5rem;
+}
+
+.card-item {
+  float: right;
+  max-height: 100%;
 }
