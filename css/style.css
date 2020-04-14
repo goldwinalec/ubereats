@@ -49,6 +49,10 @@ header {
   line-height: 34px;
 }
 
+.menu {
+  padding-bottom: 100px;
+}
+
 .menu-card {
   background-color: #fff;
   padding: 0;
@@ -90,7 +94,6 @@ footer {
   padding-top: 56px;
   padding-bottom: 40px;
   background-color: #262626;
-  margin-top: 100px;
 }
 
 .info-footer {
@@ -112,20 +115,6 @@ footer {
   width: 227px;
   height: 40px;
   margin-bottom: 33px;
-}
-
-.dropdown,
-.dropdown:focus {
-  background: #3B3B3B;
-  border-radius: 2px;
-  border: none;
-  color: #fff;
-  font-size: 13px;
-  line-height: 15px;
-  width: 227px;
-  height: 40px;
-  margin-bottom: 33px;
-  padding: 12px;
 }
 
 .form-control:hover {

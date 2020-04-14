@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+a:hover {
+  color: #327430;
+}
+
 .main-restraunt {
   background-image: url('../img/pushkin/back3.png');
   background-repeat: no-repeat;
@@ -65,7 +69,7 @@ li .active {
 }
 
 .snacks-menu {
-  background-color: #eee;
+  padding-bottom: 30px;
 }
 
 .snack-header {
