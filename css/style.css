@@ -193,6 +193,10 @@ a:hover {
   line-height: 15px;
 }
 
+.footer__list-item a:hover {
+  color: #327430;
+}
+
 .footer__list-item {
   margin-bottom: 23px;
 }
