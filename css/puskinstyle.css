@@ -86,17 +86,14 @@ li .active {
   height: 160px;
   margin-bottom: 49px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 290px;
 }
 
 .menu__card:hover {
   cursor: pointer;
   background-color: rgba(117, 117, 117, 0.04);
-}
-
-.menu__card {
-  display: flex;
-  justify-content: space-between;
-  min-width: 290px;
 }
 
 .menu__name {

@@ -27,6 +27,12 @@ a:hover {
   color: #327430;
 }
 
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__logo {
   display: flex;
   align-self: center;
@@ -45,13 +51,13 @@ a:hover {
   color: #1d1d1d;
 }
 
-.header-right {
+.header__menu {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
-.menu__search input {
+.restaurants__search input {
   width: 100%;
   margin: 56px 0;
   border: none;
@@ -62,51 +68,44 @@ a:hover {
   outline: none;
 }
 
-.restraunts-header {
-  font-size: 22px;
-  line-height: 34px;
-}
-
-.menu {
+.restaurants {
   padding-bottom: 100px;
 }
 
-.menu-container {
-  padding: 0;
-}
-
-.menu-card {
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
-  padding: 0;
+  padding: ;
   margin: 20px 7.5px 0;
   max-width: 308px;
 }
 
-.rest-name {
+.restaurant__card-image {
+  width: 100%;
+}
+
+.restaurant__card-title {
   font-size: 16px;
   line-height: 24px;
   margin: 16px 0 0 0;
 }
 
-.rest-image {
-  width: 100%;
-}
-
-.category {
+.restaurant__card-category {
   font-size: 14px;
   line-height: 21px;
   color: #626262;
   margin: 4px 0 0 0;
 }
 
-.time {
+.restaurant__card-time {
   font-size: 13px;
   line-height: 21px;
   margin: 4px 0 0 0;
   padding-bottom: 20px;
 }
 
-.menu-card:hover {
+.restaurant__card:hover {
   cursor: pointer;
   background-color: rgba(117, 117, 117, 0.04);
 }
@@ -125,22 +124,32 @@ a:hover {
   margin-top: 60px;
 }
 
+.footer__language {
+  max-width: 227px;
+  margin-bottom: 33px;
+}
+
 .footer__select,
 .footer__select:focus {
+  width: 100%;
   background: #3b3b3b;
   border-radius: 2px;
   border: none;
   color: #fff;
   font-size: 13px;
   line-height: 15px;
-  width: 227px;
   height: 40px;
-  margin-bottom: 33px;
   outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer__select:hover {
   cursor: pointer;
+}
+
+.footer__select-option {
+  outline: none;
 }
 
 .footer__social {
@@ -158,52 +167,58 @@ a:hover {
   color: #fff;
 }
 
+.footer__social-icons {
+  display: flex;
+}
+
 .footer__social-icon {
   margin-right: 15px;
+  display: block;
 }
 
-.footer-list {
+.footer__list {
   list-style: none;
   margin-bottom: 0;
-  padding-inline-start: 0;
+  padding-left: 0;
 }
 
-.footer-list a {
+.footer__list-item a {
   color: #fff;
   font-size: 13px;
   line-height: 15px;
 }
 
-.footer-list li {
+.footer__list-item {
   margin-bottom: 23px;
 }
 
-.footer-list .last-li {
+.footer__list-item:last-child {
   margin-bottom: 0;
 }
 
 .footer__apps {
+  display: flex;
+  justify-content: center;
   padding: 40px 0;
   border-bottom: 1px solid rgba(256, 256, 256, 0.4);
 }
 
-.footer__apps a {
+.footer__apps-link {
   margin: 0 10px;
 }
 
 .footer__policy {
   padding-top: 40px;
-  font-size: 11px;
-  line-height: 13px;
-  color: #fff;
-  text-align: left;
 }
 
-.footer__policy a {
+.footer__policy-link,
+.footer__copyright {
+  display: block;
   font-size: 11px;
   line-height: 13px;
   color: #fff;
   text-align: left;
+  margin: 10px 0;
 }
 
 #myBtn {
@@ -231,19 +246,33 @@ a:hover {
   opacity: 0.2;
 }
 
+@media screen and (max-width: 991px) {
+  .footer__select {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .menu-list {
     flex-direction: column;
+  }
+  .footer__list-item {
+    margin-bottom: 10px;
+  }
+  .footer__language {
+    margin-bottom: 20px;
+  }
+  .footer__social-icons {
+    margin-bottom: 20px;
+  }
+  .footer__policy {
+    padding-top: 30px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .header {
     padding: 15px 0;
-  }
-  .header-right {
-    justify-content: start;
-    margin-top: 10px;
   }
   .card-restraunt {
     margin: 0 auto;
@@ -257,9 +286,15 @@ a:hover {
   }
   .restaurant__time {
     margin-left: 0;
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .restraunt__item {
     margin: 0 auto;
+  }
+  .footer__social-icons {
+    margin-bottom: 10px;
+  }
+  .footer__list-item:first-child {
+    margin-top: 10px;
   }
 }

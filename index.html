@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/puskinstyle.css">
   <script src="https://kit.fontawesome.com/96202a985d.js" crossorigin="anonymous"></script>
   <title>Uber Eats</title>
 </head>
@@ -34,76 +33,82 @@
       </div>
     </div>
   </header>
-  <section class="menu">
+  <section class="restaurants">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
-          <form class="menu__search">
+          <form class="restaurants__search">
             <input type="text" placeholder="Поиск по ресторанам и кухням">
           </form>
         </div>
       </div>
       <div class="row">
         <div class="col-xl-12">
-          <h3 class="restraunts-header">Рестораны в Москве</h3>
+          <h3 class="menu__title">Рестораны в Москве</h3>
         </div>
       </div>
-      <div class="container menu-container">
-        <div class="row d-flex justify-content-center">
-          <div class=" col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/mcd.png" alt="McDonald's">
-            <h5 class="rest-name">Макдоналдс — Газетный</h5>
-            <p class="category">₽₽ • Бургеры</p>
-            <p class="time">25 - 35 мин</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="restaurant__card">
+            <img class="restaurant__card-image" src="img/mcd.png" alt="McDonald's">
+            <h5 class="restaurant__card-title">Макдоналдс — Газетный</h5>
+            <span class="restaurant__card-category">₽₽ • Бургеры</span>
+            <span class="restaurant__card-time">25 - 35 мин</span>
           </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/dimsum.png" alt="DimSum&Co">
-            <h5 class="rest-name">DimSum & Co — ЦДМ</h5>
-            <p class="category">₽ • Японская • Китайская • Азиатская</p>
-            <p class="time">40 - 50 мин</p>
+        </div>
+        <div class="col-md-4">
+          <div class="restaurant__card">
+            <img class="restaurant__card-image" src="img/dimsum.png" alt="DimSum&Co">
+            <h5 class="restaurant__card-title">DimSum & Co — ЦДМ</h5>
+            <span class="restaurant__card-category">₽ • Японская • Китайская • Азиатская</span>
+            <span class="restaurant__card-time">40 - 50 мин</span>
           </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/dvizh.png" alt="DvizhOk">
-            <h5 class="rest-name">ДвижОК — Манежная</h5>
-            <p class="category">₽ • Американская • Европейская</p>
-            <p class="time">35 - 45 мин</p>
+        </div>
+        <div class="col-md-4">
+          <div class="restaurant__card">
+            <img class="restaurant__card-image" src="img/dvizh.png" alt="DvizhOk">
+            <h5 class="restaurant__card-title">ДвижОК — Манежная</h5>
+            <span class="restaurant__card-category">₽ • Американская • Европейская</span>
+            <span class="restaurant__card-time">35 - 45 мин</span>
           </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/nha.png" alt="NHA">
-            <h5 class="rest-name">НЯ — NHA</h5>
-            <p class="category">₽₽ • Вьетнамская</p>
-            <p class="time">30 - 40 мин</p>
+        </div>
+        <div class="col-md-4">
+          <div class="restaurant__card">
+            <img class="restaurant__card-image" src="img/nha.png" alt="NHA">
+            <h5 class="restaurant__card-title">НЯ — NHA</h5>
+            <span class="restaurant__card-category">₽₽ • Вьетнамская</span>
+            <span class="restaurant__card-time">30 - 40 мин</span>
           </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/dzi.png" alt="dzi">
-            <h5 class="rest-name">Точка Дзы — Цветной</h5>
-            <p class="category">₽₽ • Вьетнамская</p>
-            <p class="time">35 - 45 мин</p>
-          </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/cinnabon.png" alt="Cinnabon">
-            <h5 class="rest-name">Cinnabon</h5>
-            <p class="category">₽ • Выпечка • Десерты • Капкейки</p>
-            <p class="time">25 - 35 мин</p>
-          </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/pizzelove.png" alt="pizzelove">
-            <h5 class="rest-name">PIZZELOVE</h5>
-            <p class="category">₽₽ • Пицца</p>
-            <p class="time">15 - 25 мин</p>
-          </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/zu.png" alt="zu cafe">
-            <h5 class="rest-name">Zю кафе — Тверская</h5>
-            <p class="category">₽₽ • Японская</p>
-            <p class="time">25 - 35 мин</p>
-          </div>
-          <div class="col-xl-4 col-lg-4 menu-card">
-            <img class="rest-image" src="img/barbq.png" alt="Bar BQ Cafe">
-            <h5 class="rest-name">Bar BQ Cafe — Манежная</h5>
-            <p class="category">₽₽₽ • Европейская</p>
-            <p class="time">30 - 40 мин</p>
-          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 menu-card">
+          <img class="restaurant__card-image" src="img/dzi.png" alt="dzi">
+          <h5 class="restaurant__card-title">Точка Дзы — Цветной</h5>
+          <span class="restaurant__card-category">₽₽ • Вьетнамская</span>
+          <span class="restaurant__card-time">35 - 45 мин</span>
+        </div>
+        <div class="col-xl-4 col-lg-4 menu-card">
+          <img class="restaurant__card-image" src="img/cinnabon.png" alt="Cinnabon">
+          <h5 class="rest-name">Cinnabon</h5>
+          <span class="restaurant__card-category">₽ • Выпечка • Десерты • Капкейки</span>
+          <span class="restaurant__card-time">25 - 35 мин<spanp>
+        </div>
+        <div class="col-xl-4 col-lg-4 menu-card">
+          <img class="restaurant__card-image" src="img/pizzelove.png" alt="pizzelove">
+          <h5 class="rest-name">PIZZELOVE</h5>
+          <span class="restaurant__card-category">₽₽ • Пицца</span>
+          <span class="restaurant__card-time">15 - 25 мин</span>
+        </div>
+        <div class="col-xl-4 col-lg-4 menu-card">
+          <img class="restaurant__card-image" src="img/zu.png" alt="zu cafe">
+          <h5 class="rest-name">Zю кафе — Тверская</h5>
+          <span class="restaurant__card-category">₽₽ • Японская</span>
+          <span class="restaurant__card-time">25 - 35 мин</span>
+        </div>
+        <div class="col-xl-4 col-lg-4 menu-card">
+          <img class="restaurant__card-image" src="img/barbq.png" alt="Bar BQ Cafe">
+          <h5 class="rest-name">Bar BQ Cafe — Манежная</h5>
+          <span class="restaurant__card-category">₽₽₽ • Европейская</span>
+          <span class="restaurant__card-time">30 - 40 мин</span>
         </div>
       </div>
     </div>
@@ -121,9 +126,9 @@
             <div class="row">
               <div class="col-12">
                 <form class="footer__language">
-                  <select class="footer__select" id="exampleFormControlSelect1">
-                    <option>Русский</option>
-                    <option>English</option>
+                  <select class="footer__select">
+                    <option class="footer__select-option">Русский</option>
+                    <option class="footer__select-option">English</option>
                   </select>
                 </form>
               </div>
@@ -146,18 +151,18 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <ul class="footer-list">
-              <li><a href="#">Об UberEats</a></li>
-              <li><a href="#">Станьте партнёром по доставке</a></li>
-              <li><a href="#">Станьте партнёром-рестораном</a></li>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="#">Об UberEats</a></li>
+              <li class="footer__list-item"><a href="#">Станьте партнёром по доставке</a></li>
+              <li class="footer__list-item"><a href="#">Станьте партнёром-рестораном</a></li>
             </ul>
           </div>
           <div class="col-sm-4">
-            <ul class="footer-list">
-              <li><a href="#">Все города</a></li>
-              <li><a href="#">Цены</a></li>
-              <li><a href="#">Помощь</a></li>
-              <li class="last-li"><a href="#">FAQs</a></li>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="#">Все города</a></li>
+              <li class="footer__list-item"><a href="#">Цены</a></li>
+              <li class="footer__list-item"><a href="#">Помощь</a></li>
+              <li class="footer__list-item"><a href="#">FAQs</a></li>
             </ul>
           </div>
       </section>
