@@ -230,7 +230,8 @@ a:hover {
   margin: 10px 0;
 }
 
-#myBtn {
+.top-btn,
+.top-btn:focus {
   position: fixed;
   bottom: 24px;
   right: 16px;
@@ -239,18 +240,17 @@ a:hover {
   outline: none;
   background: #59bd5a;
   border-radius: 2px;
-  color: white;
   cursor: pointer;
   width: 80px;
   height: 80px;
-  font-size: 25px;
-  transition: 0.1s;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-#myBtn img {
+.top-btn img {
   margin: auto;
 }
 
-#myBtn:hover {
-  opacity: 0.2;
+.top-btn.visible {
+  opacity: 1;
 }
